@@ -1,0 +1,38 @@
+{
+    "name": "arquitectura_hexagonal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "build": "npx tsc",
+        "start": "node dist/index.js",
+        "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+        "eslint": "eslint --ext .ts --fix ./ -c .eslintrc.json"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@decorators/di": "^1.0.3",
+        "@decorators/express": "^2.6.0",
+        "axios": "^0.27.2",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "ioc-node": "^2.3.2",
+        "node-fetch": "^3.2.10",
+        "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.14",
+        "@types/node": "^18.8.3",
+        "@typescript-eslint/eslint-plugin": "^5.40.0",
+        "concurrently": "^7.4.0",
+        "eslint": "^8.25.0",
+        "eslint-config-standard-with-typescript": "^23.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.3.0",
+        "eslint-plugin-promise": "^6.1.0",
+        "nodemon": "^2.0.20",
+        "typescript": "^4.8.4"
+    }
+}
